@@ -2,7 +2,6 @@
 package org.rest.modelo;
 
 public class usuario {
-  //variables donde se va almacenar la informacion
     private int id;
     private String nombre;
     private String correoElectronico;
@@ -12,7 +11,7 @@ public class usuario {
 
     public usuario() {
     }
-  //constructor parametrizado 
+
     public usuario(int id, String nombre, String correoElectronico, String contraseña, String fechaNacimiento, int edad) {
         this.id = id;
         this.nombre = nombre;
