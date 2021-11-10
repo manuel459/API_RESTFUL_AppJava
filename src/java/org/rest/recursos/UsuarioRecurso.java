@@ -19,13 +19,12 @@ import org.rest.servicio.UsuarioServicio;
 @Path("/usuarios")
 public class UsuarioRecurso {
     UsuarioServicio servicio = new UsuarioServicio();
+    
    @GET
   @Produces(MediaType.APPLICATION_JSON)
    public List<usuario> getUsuario(){
    return servicio.getUsuarios();
    }
-   
-   
    
    @POST
    @Consumes(MediaType.APPLICATION_JSON)
